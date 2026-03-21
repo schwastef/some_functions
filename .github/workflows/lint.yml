@@ -1,3 +1,5 @@
+name: Run Ruff
+
 on:
   pull_request:
   push:
