@@ -1,5 +1,6 @@
-import some_functions as sf
 import numpy as np
+
+import some_functions as sf
 
 
 def main():
