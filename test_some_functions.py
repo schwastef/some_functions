@@ -1,3 +1,7 @@
+# This python script is used by pytest to run the test of the functions defined in "some_functions.py". 
+# It contains one test function for each function in "some_functions.py" with multiple assert 
+# statements testing multiple cases.
+
 import numpy as np
 import pytest
 

@@ -1,3 +1,9 @@
+# In this python script four functions are defined.
+# - calc_series_impedance(z_list)
+# - calc_parallel_impedance(z_list)
+# - transformation(a, b, c)
+# - inverse_transformation(v0, v1, v2)
+
 import numpy as np
 
 f = -0.5 + np.sqrt(3) / 2 * 1j  # 120 degrees rotation operator

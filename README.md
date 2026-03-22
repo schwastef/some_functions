@@ -1,3 +1,6 @@
+Copyright (c) 2026 schwastef
+This project is released under the MIT LICENSE.
+
 # some_functions
 Repository for handing in homework 1 of the "Open Source Energy System Modeling" VU at TU Wien. The repo contains functions for calculating series and parallel impedances as well as transforming the complex RMS vectors of a three-phase system into symmetrical components (zero sequence, positive sequence, negative sequence).
 
@@ -5,7 +8,7 @@ Repository for handing in homework 1 of the "Open Source Energy System Modeling"
 This python script contains example calls of the functions implemented in some_functions.py.
 
 ## some_functions.py
-In this python script there are four functions defined.
+In this python script four functions are defined.
 
 ### calc_series_impedance(z_list): 
 Calculates the total impedance of the impedances in z_list. The assumption is that the impedances are connected in series.
