@@ -1,4 +1,4 @@
-Copyright (c) 2026 schwastef
+Copyright (c) 2026 schwastef (Stefan Schwarzmann)
 
 This project is released under the MIT LICENSE.
 
