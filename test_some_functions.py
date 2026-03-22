@@ -1,5 +1,5 @@
-# This python script is used by pytest to run the test of the functions defined in "some_functions.py". 
-# It contains one test function for each function in "some_functions.py" with multiple assert 
+# This python script is used by pytest to run the test of the functions defined in "some_functions.py".
+# It contains one test function for each function in "some_functions.py" with multiple assert
 # statements testing multiple cases.
 
 import numpy as np
@@ -26,23 +26,23 @@ def test_calc_series_impedance():
 def test_transformation():
     assert sf.transformation(1, a**2, a) == pytest.approx(
         [0.0, 1.0, 0.0], abs=1e-3
-    )  # Only a positive sequence
+    )  
     assert sf.transformation(1, a, a**2) == pytest.approx(
         [0.0, 0.0, 1.0], abs=1e-3
-    )  # Only a negative sequence
+    )  
     assert sf.transformation(1, 1, 1) == pytest.approx(
         [1.0, 0.0, 0.0], abs=1e-3
-    )  # Only a zero sequence
+    )  
 
 
 # Testfunction for "inverse_transformation" function
 def test_inverse_transformation():
-    assert sf.inverse_transformation(0.0, 1.0, 0.0) == pytest.approx(  # Only a positive sequence
+    assert sf.inverse_transformation(0.0, 1.0, 0.0) == pytest.approx(  
         [1, -0.5 - 0.866j, -0.5 + 0.866j], abs=1e-3
     )
-    assert sf.inverse_transformation(0.0, 0.0, 1.0) == pytest.approx(  # Only a negative sequence
+    assert sf.inverse_transformation(0.0, 0.0, 1.0) == pytest.approx(  
         [1, -0.5 + 0.866j, -0.5 - 0.866j], abs=1e-3
     )
-    assert sf.inverse_transformation(1.0, 0.0, 0.0) == pytest.approx(  # Only a zero sequence
+    assert sf.inverse_transformation(1.0, 0.0, 0.0) == pytest.approx(  
         [1.0, 1.0, 1.0], abs=1e-3
     )
