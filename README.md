@@ -1,4 +1,5 @@
 Copyright (c) 2026 schwastef
+
 This project is released under the MIT LICENSE.
 
 # some_functions
