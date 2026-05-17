@@ -12,7 +12,7 @@ a = -0.5 + np.sqrt(3) / 2 * 1j  # 120 degrees rotation operator
 
 # Testfunction for "calc_parallel_impedance" function
 def test_calc_parallel_impedance():
-    assert sf.calc_parallel_impedance([4, 4, 4, 4]) == 1.0
+    assert sf.calc_parallel_impedance([4,4,4,4]) == 2.0
     assert sf.calc_parallel_impedance([4 + 5j, 1 - 6j]) == pytest.approx(7.269 - 2.346j, abs=1e-3)
 
 
