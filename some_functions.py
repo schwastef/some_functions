@@ -4,6 +4,7 @@
 # - transformation(a, b, c)
 # - inverse_transformation(v0, v1, v2)
 
+import os
 import numpy as np
 
 f = -0.5 + np.sqrt(3) / 2 * 1j  # 120 degrees rotation operator
